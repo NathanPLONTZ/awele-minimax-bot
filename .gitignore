@@ -1,0 +1,53 @@
+# --- Dependencies ----------------------------------------------------------
+# JARs are not committed; see requirements.txt for how to fetch them.
+lib/
+*.jar
+*.war
+*.pom
+
+# --- Build output ----------------------------------------------------------
+bin/
+build/
+out/
+target/
+classes/
+*.class
+
+# --- Generated at run time -------------------------------------------------
+# The runner rewrites these logs on every launch, and the non-anonymous one
+# carries author names.
+awele.log
+awele.anonymous.log
+*.log
+
+# --- Course material, not redistributed ------------------------------------
+# The assignment brief and the report are not part of this repository.
+*.pdf
+RAPPORT*
+rapport*
+
+# --- IDE and tooling -------------------------------------------------------
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+nbproject/
+.gradle/
+.mvn/
+mvnw
+mvnw.cmd
+
+# --- OS ---------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Misc -------------------------------------------------------------------
+*.swp
+*~
+hs_err_pid*.log
+replay_pid*.log

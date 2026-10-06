@@ -1,0 +1,27 @@
+# Requirements - Awele AI bot
+#
+# This is a Java project, so the entries below are JARs rather than Python
+# packages. The JARs are not committed; download them into lib/ before building.
+# See the README for the one-liner that fetches them.
+
+# --- Toolchain -------------------------------------------------------------
+# JDK 17 or later (developed on 17, verified on 21)
+java >= 17
+
+# --- Runtime dependencies --------------------------------------------------
+# Only these two are needed. The runner discovers the bot classes by scanning
+# the awele.bot package at startup; reflections does the scan, javassist is the
+# bytecode reader it relies on.
+
+org.reflections:reflections:0.9.12
+org.javassist:javassist:3.21.0-GA
+
+# --- Direct download URLs --------------------------------------------------
+# https://repo1.maven.org/maven2/org/reflections/reflections/0.9.12/reflections-0.9.12.jar
+# https://repo1.maven.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar
+
+# --- Not required ----------------------------------------------------------
+# The original course project shipped 36 JARs (weka, quickml, netlib, mtj, jaxb
+# and others) for students who wanted to plug in a machine-learning library.
+# This bot uses tree search instead, so none of them are referenced. Compilation
+# and the full championship were verified against the two JARs above alone.
